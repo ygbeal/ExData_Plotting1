@@ -27,7 +27,7 @@ png(filename = "./plot4.png", width = 480, height = 480)
 par(mfrow=c(2,2))
 with(dfData, {
 	plot(DateTime, Global_active_power, xlab = "", type = 'l', bg = "transparent",
-		ylab = 'Global Active Power (Kilowatts)', main = NULL)
+		ylab = 'Global Active Power', main = NULL)
 	plot(DateTime, Voltage, xlab = "datetime", type = 'l', bg = "transparent",
 		ylab = 'Voltage', main = NULL)
 	plot(DateTime, Sub_metering_1, xlab = "", type = 'l', col = 'grey',
